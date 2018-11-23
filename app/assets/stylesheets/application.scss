@@ -1,15 +1,49 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* = require_tree .
+*/
+#index {
+  background-image: url(DSC_1158.JPG);
+  background-repeat: no-repeat;
+  background-position: center,center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .nav{
+    .navi{
+      .menu{
+        float:right;
+        font-size:20px;
+        margin:0 20px;
+        }
+      }
+    }
+    .title{
+        font-size: 100px;
+        line-height:1;
+        font-family:serif;
+        color:Black;
+        text-align:center;
+
+    }
+  .content{
+  padding-top:150px;
+    .attentions{
+    font-size:16px;
+    color:red;
+    }
+    .btn{
+      .test{
+      background-color:#009cd3;
+      color:white;
+      font-size:20px;
+      font-family:'Bitter', serif;
+      border-radius:6px;
+      width:185px;
+      text-align:center;
+        .test :visited {
+        color:white;
+        }
+      }
+    }
+  }
+}

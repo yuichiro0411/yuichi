@@ -1,6 +1,6 @@
 class TellsController < ApplicationController
-	def index
-	end
-	def test
-	end
+  def index
+  end
+  def about
+  end
 end
