@@ -1,0 +1,65 @@
+
+.about{
+  background-image: url(IMG_6750.JPG);
+  background-repeat: no-repeat;
+  background-position: center,top;
+  background-attachment: fixed;
+  background-size: cover;
+  // background-sixeをcoverにすることで、様々な端末においても背景画像を設定できる！
+  clear:both;
+
+  .who{
+    font-size: 100px;
+    line-height:1;
+    font-family:serif;
+    color:#FF8C00;
+    text-align:center;
+  }
+  .about__content{
+    background-color: #ffffff;
+    margin-top:850px;
+    margin-bottom:25px;
+    padding: 30px;
+    font-family:serif;
+    .introduce{
+      font-size:20px;
+    }
+    .profile{
+      .profile-text{
+        // float:left;
+        width:100%;
+      }
+      .profile__image{
+        float:right;
+        padding-right:55px;
+        padding-bottom:25px;
+        .profile__image-me{
+          max-width:100%;
+        }
+      }
+      .linkToSNS{
+        list-style:none;
+        .fab{
+          font-size: 38px;
+          color:black;
+          float:left;
+          padding:7px;
+        }
+      }
+      .maps{
+        max-width: 100%;
+        float:left;
+        padding-right:20px;
+      }
+
+    }
+
+    .portfolio{
+      margin:auto;
+      width:1020px;
+      .photos{
+        margin:auto;
+      }
+    }
+  }
+}

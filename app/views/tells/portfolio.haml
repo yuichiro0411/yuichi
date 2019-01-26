@@ -1,0 +1,15 @@
+%body.about
+  .test.clearfix
+    = render 'tells/nav'
+  %h1.who PORTFOLIO
+  .about__content
+
+    .portfolio.clearfix
+      %h2 Portfolio
+      %p "Shooting my journey and your lives, Let's do it!!"
+      =image_tag 'Bangkok.JPG', size: "500x350",alt:'test2', class: 'photos1'
+      =image_tag 'DSC_1158.JPG',size:'500x350', alt:'test4', class: 'photos2'
+      =image_tag 'Dali.JPG',size:'500x350', alt:'test3', class: 'photos3'
+      =image_tag 'Shangri-la.JPG',size:'500x350',alt:'test5', class: 'photos4'
+      %p There's more posts in Instagram. please check!!
+      =link_to 'My Instagram','https://www.instagram.com/yuichit0411/'

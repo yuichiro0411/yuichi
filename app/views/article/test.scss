@@ -1,0 +1,14 @@
+.about{
+  background-image: url(IMG_6750.JPG);
+  background-repeat: no-repeat;
+  background-position: center,top;
+  background-attachment: fixed;
+  background-size: cover;
+  // background-sixeをcoverにすることで、様々な端末においても背景画像を設定できる！
+  clear:both;
+  .about__content{
+    background-color: #ffffff;
+    margin-top:850px;
+    margin-bottom:25px;
+    padding: 30px;
+    font-family:serif;

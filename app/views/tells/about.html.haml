@@ -1,18 +1,55 @@
 %head
   %title About me.
 %body.about
+  .bar.clearfix
+    = render 'tells/nav'
   %h1.who Who is Yuichi?
-  .about__content.clearfix
+  .about__content
     %h1.title about
-    %p.introduce Koenji JAPAN 代表 滝山です。
+    %p.introduce 株式会社Koenji JAPAN 代表 滝山 祐一郎(Yuichiro Takiyama)
+    .about__content--greeting
+      %h2.title Hi!
+      %p
+        初めましてKoenji JAPAN代表の滝山です。我々、Koenji JAPANでは
+        %b>「Tokyoと世界を結ぶ架け橋を」
+        をモットーにTokyoを世界中に発信する諜報活動を行なっております。
     %section.profile
+      .profile__image
+        = image_tag "me.JPG",size:"500x350", alt: "test", class: "profile__image-me"
       .profile-text
         %h2.title Profile
-        %p 株式会社 Koenji JAPAN代表：滝山。
-        %p 静岡県沼津市出身 94年生まれ
-        %p 高校時代の修学旅行で訪れたオアフ島のウォルマートに感銘を受け、海外旅行の虜になる。
-        %p  以後、バックパックを背負い東南アジアや東アジアを中心にフラフラする。
-        %p 大学を卒業後、名古屋や豊橋でサラリーマン生活を送るもここには書けない黒い事情もあり退職
-        %p  2018年、高円寺に拠点を移しひっそりと生活。
-      .profile-image
-        = image_tag "me.JPG", size: "500x350", alt: "test"
+        %p 株式会社 Koenji JAPAN代表：滝山 祐一郎
+        %p 静岡県沼津市出身 1994年4月生まれ
+        %p 高校時代の修学旅行で訪れたホノルルのウォルマートに大きな衝撃を受け、海外に憧れを持つ。
+        %p 大学時代はバックパックを背負い東南アジアや東アジアを中心にフラフラする。
+        %p
+          大学卒業後、名古屋や豊橋でサラリーマン生活を送るもここには書けない
+          %b>黒い事情
+          もあり退職
+        %p 2018年、高円寺に拠点を移しひっそりと生活しつつ「Koenji JAPAN」を立ち上げる
+        %br
+        %p.profile-text__likes 好きなものは魚、炭水化物、お茶、空港の出発ロビー。嫌いなものはいっぱい。
+        .profile__sns.clearfix
+          %h2.title Social media accounts
+          %ul.linkToSNS
+            %li.sns
+              =link_to "https://twitter.com/Akky_journey" do
+                %i.fab.fa-twitter
+            %li.sns
+              =link_to 'https://www.instagram.com/yuichit0411/' do
+                %i.fab.fa-instagram
+
+
+
+      .profile-maps.clearfix
+        %h2.title Our Work Place
+        %iframe{allowfullscreen: "", frameborder: "0",height: "375", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.452686171124!2d139.6456876256601!3d35.70835128256832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f27d7ae2481d%3A0x7c2a6f446552a76c!2z6auY5YaG5a-66aeF!5e0!3m2!1sja!2sjp!4v1547641397500", style: "border:0",width:"450", class:"maps"}
+        .profile-maps__address
+          %p 東京都杉並区高円寺南４丁目４７−１
+          JR中央線高円寺駅 徒歩0分
+
+
+
+      / %li.list
+      /   = link_to new_group_path do
+      /     = fa_icon 'pencil-square-o', class: 'left-menu__upper--header-lists-list'

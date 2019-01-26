@@ -7,16 +7,10 @@
     %title Yuichi Official Website
     / %link{:href => "stylsheets", :rel => "stylesheet"}/
   %body#index
-    %header
-      .nav
-        %ul.navi
-          %li.menu contact
-          %li.menu 
-            = link_to 'About','tells'
+    =render 'tells/nav'
     #wrap
       .content
-        %h1.title Test
-        %p.attentions この人物はフィクションです。実在の人物、団体などとは一切関係がございません。
-        %p.test テスト！
-        .btn
+        %h1.title Shooting my journey and your lives!
+        %p.attentions This is Yuichi's Official website.
+        %p.test
 
